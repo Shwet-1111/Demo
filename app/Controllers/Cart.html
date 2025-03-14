@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexStart Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+     .container{
+        width: 1290px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+            <div class="d-flex align-items-center me-4">
+                <div class="rounded-circle bg-success text-white text-center me-2" style="width: 40px; height: 40px; line-height: 40px;">1</div>
+                <div class="fw-bold text-success">Shopping Cart</div>
+            </div>
+            <div class="d-flex align-items-center me-4">
+                <div class="rounded-circle bg-light text-secondary text-center me-2" style="width: 40px; height: 40px; line-height: 40px;">2</div>
+                <div class="text-secondary">Checkout Details</div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-light text-secondary text-center me-2" style="width: 40px; height: 40px; line-height: 40px;">3</div>
+                <div class="text-secondary">Order Complete</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <table class="table table-striped">
+                    <thead class="bg-success text-white">
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="d-flex align-items-center">
+                                <img src="image1.png" alt="Cashew" class="img-fluid me-2" style="width: 50px;">
+                                Premium Cashew Kernels Jumbo size Cashew (W180)
+                            </td>
+                            <td>&#8377;490.00</td>
+                            <td>
+                                <div class="input-group" style="width: 120px;">
+                                    <button class="btn btn-outline-secondary">-</button>
+                                    <input type="text" class="form-control text-center" value="1">
+                                    <button class="btn btn-outline-secondary">+</button>
+                                </div>
+                            </td>
+                            <td>&#8377;490.00</td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex align-items-center">
+                                <img src="image2.png" alt="Cashew" class="img-fluid me-2" style="width: 50px;">
+                                W320 Cashew Kernels 250G
+                            </td>
+                            <td>&#8377;355.00</td>
+                            <td>
+                                <div class="input-group" style="width: 120px;">
+                                    <button class="btn btn-outline-secondary">-</button>
+                                    <input type="text" class="form-control text-center" value="1">
+                                    <button class="btn btn-outline-secondary">+</button>
+                                </div>
+                            </td>
+                            <td>&#8377;355.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-success">&larr; Continue shopping</button>
+            </div>
+    
+            <div class="col-lg-4">
+                <div class="border p-4 rounded shadow-sm">
+                    <h4>Cart totals</h4>
+                    <p>Subtotal: <strong>&#8377;845.00</strong></p>
+                    <p>Total: <strong>&#8377;845.00</strong></p>
+                    <button class="btn btn-success w-100 mb-3">PROCEED TO CHECKOUT</button>
+                    <div class="bg-light p-3 rounded">
+                        <label for="coupon" class="form-label">Coupon Code</label>
+                        <input type="text" class="form-control mb-2" id="coupon" placeholder="Enter coupon code">
+                        <button class="btn btn-secondary w-100">APPLY COUPON</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
