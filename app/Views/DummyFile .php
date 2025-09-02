@@ -61,3 +61,17 @@
 
 </body>
 </html>
+$routes->get('chapters', 'ChapterController::index');
+$routes->get('chapters/getByCity', 'ChapterController::getByCity');
+
+
+ public function getByCity()
+    {
+        $city = $this->request->getGet('city');
+        $chapterModel = new ChapterModel();
+
+        $chapters = $chapterModel->where('city', $city)->findAll();
+
+        return $this->response->setJSON($chapters);
+    }
+}
