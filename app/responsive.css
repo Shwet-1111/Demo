@@ -1173,7 +1173,56 @@
         font-family: Roboto-Regular;
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
     }
+    .reviewCardContent .reviewContainer .reviewText h2 {
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2C663D;
+    padding-left: 20px;
+}
+.reviewCardContent .reviewContainer .reviewText p {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+    padding-left: 20px;
+}
+.reviewCardContent p {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+    text-align: left;
+}
+.reviewCardContent .starsectionbody p
+ {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+    margin-left: 10px;
+}
+.reviewCardContent .reviewContainer .review-img {
+    width: auto;
+    max-width: 100px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+}
+.reviewCardContent .btn-readmore {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2C663D;
+    padding-left: 0px;
+}
+.reviewCardContent {
+    padding: 18px 20px;
+    border: 1px solid #CEEEE5;
+    border-radius: 8px;
+}
 
     .carouselimg {
         width: 100%;
@@ -1438,9 +1487,80 @@
         background-color: #2C663D;
         color: #FFFFFF;
     }
-
-
-
+    .servicesHeader h1 {
+        font-size: 26px;
+        font-family: Roboto-Bold;
+        line-height: 26px;
+        text-align: center;
+        color: #2C663D;
+    }
+.servicesHeader p {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.servicesContainer h2 {
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2C663D;
+    text-align: center;
+    padding-top: 20px;
+}
+.servicesContainer p {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+    text-align: center;
+}
+.servicesContainer ul li {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+}
+.servicesContainer ul li b
+ {
+    font-family: Roboto-SemiBold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+}
+.pt-31 {
+    padding-top: 20px;
+}
+.CardServices h2 {
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2C663D;
+    text-align: center;
+}
+.CardServices p {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+    text-align: center;
+}
+.CardServices ul li {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: #353535;
+}
+.reviewheader h1 {
+    font-family: Roboto-Bold;
+    font-size: 26px;
+    line-height: 26px;
+    color: #2C663D;
+    text-align: center;
+}
 }
 
 /* High-resolution screens with max 1080p height (applies to many screens) */
