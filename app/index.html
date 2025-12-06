@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>403 Forbidden</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Center Arrows</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.css">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <style>
+/* ⭐ Carousel ko relative taaki arrows overlay ho sake */
+.owl-carousel {
+    position: relative;
+}
+
+/* ⭐ Custom Nav Overlay on Image Center */
+.custom-nav {
+    position: absolute !important;
+    top: 36%;                      /* center vertically */
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);   /* perfect center */
+    pointer-events: none;          /* buttons click OK */
+    z-index: 50;
+}
+
+/* ⭐ Buttons */
+.custom-nav .owl-prev,
+.custom-nav .owl-next {
+    pointer-events: all;
+    position: absolute;
+    background: #f8b78d;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 28px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Left Button */
+.custom-nav .owl-prev {
+    left: -25px;
+}
+
+/* Right Button */
+.custom-nav .owl-next {
+    right: -25px;
+}
+
+/* Hover */
+.custom-nav .owl-prev:hover,
+.custom-nav .owl-next:hover {
+    background: #f5a571;
+}
+
+/* Images */
+.joinvibes img {
+    width: 100%;
+    border-radius: 10px;
+}
+    </style>
+
 </head>
 <body>
 
-<p>Directory access is forbidden.</p>
+<div class="container my-5 bg-primary">
+    <div class="row position-relative">
+
+        <!-- ⭐ Owl Carousel -->
+        <div class="owl-carousel owl-theme joinvibes">
+
+            <div class="item">
+                <a href="assets/images/1.jpg">
+                    <img src="assets/images/1.jpg">
+                </a>
+                <h4 class="text-center mt-3">Smart Card Reader</h4>
+            </div>
+
+            <div class="item">
+                <a href="assets/images/1.jpg">
+                    <img src="assets/images/1.jpg">
+                </a>
+                <h4 class="text-center mt-3">Aadhaar Scanner</h4>
+            </div>
+
+            <div class="item">
+                <a href="assets/images/1.jpg">
+                    <img src="assets/images/1.jpg">
+                </a>
+                <h4 class="text-center mt-3">Attendance System</h4>
+            </div>
+
+            <div class="item">
+                <a href="assets/images/1.jpg">
+                    <img src="assets/images/1.jpg">
+                </a>
+                <h4 class="text-center mt-3">Access Control</h4>
+            </div>
+
+        </div>
+
+        <!-- ⭐ Center Arrows -->
+        <div class="custom-nav">
+            <button class="owl-prev">‹</button>
+            <button class="owl-next">›</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/lightgallery-all.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    var owl = $(".joinvibes").owlCarousel({
+        loop: true,
+        margin: 20,
+        items: 3,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false,
+        dots: false,
+        responsive: {
+            0:{items:1},
+            570:{items:2},
+            1100:{items:2},
+            1200:{items:3}
+        }
+    });
+
+    // ⭐ Custom Buttons
+    $('.owl-prev').click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
+
+    $('.owl-next').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+
+    // ⭐ LightGallery
+    $('.joinvibes').lightGallery({
+        selector: '.item a'
+    });
+
+});
+</script>
 
 </body>
 </html>
