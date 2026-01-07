@@ -1,163 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel Center Arrows</title>
+Blog Management:
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/lightgallery.css">
+The interface includes an ‘Add Blog’ button in the top-right corner, through which you can add a new blog.
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+Blog image: an image is (600px * 400px) and image size is 30kb.
+Blog Title: (Text ex. Remodelacion Cocinas Bogota)
+Blog Alias: text (with - and using small case ex.remodelacion-cocinas-bogota)
+Blog Date: Select a date with calander icon 
+Blog Description: 
+Blog Status: Active( show Blog) Deactivate(not show on blog in blog page)
+Meta title: Blog Meta Title in text format
+Meta description: Blog Meta Description in text format 
+Meta Keywords: Blog Meta keywords in text format
 
-    <style>
-/* ⭐ Carousel ko relative taaki arrows overlay ho sake */
-.owl-carousel {
-    position: relative;
-}
+Edit/Update Blog: 
+In the Action column, there is an Edit button on the left, by clicking this button, you can update the blog details, including the blog title, blog image, blog alias, blog description, blog status, meta title, meta keywords, and meta description.
 
-/* ⭐ Custom Nav Overlay on Image Center */
-.custom-nav {
-    position: absolute !important;
-    top: 36%;                      /* center vertically */
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);   /* perfect center */
-    pointer-events: none;          /* buttons click OK */
-    z-index: 50;
-}
+Delete Blog: 
+In the Action column, there is also a Delete button on the right; by clicking this button, you can delete the blog
 
-/* ⭐ Buttons */
-.custom-nav .owl-prev,
-.custom-nav .owl-next {
-    pointer-events: all;
-    position: absolute;
-    background: #f8b78d;
-    color: #fff;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 28px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
 
-/* Left Button */
-.custom-nav .owl-prev {
-    left: -25px;
-}
 
-/* Right Button */
-.custom-nav .owl-next {
-    right: -25px;
-}
+Service Management: 
+List Service
 
-/* Hover */
-.custom-nav .owl-prev:hover,
-.custom-nav .owl-next:hover {
-    background: #f5a571;
-}
+Add Service 
 
-/* Images */
-.joinvibes img {
-    width: 100%;
-    border-radius: 10px;
-}
-    </style>
 
-</head>
-<body>
+Service image:  image (355px * 279px)(30kb)
+Service Logo:  image (230px * 75px ) (30kb)
+Service Banner:  image (1600px * 300px ) (30kb)
+Service Title:  (Text ex. Remodelacion Cocinas Bogota)
+Service alias:   text (with - and using small case ex.remodelacion-cocinas-bogota)
+Service description: 
+Service status: Active( show Service) Deactivate(not show on Service in Service page)
+Schema type : select on Service
+Meta title:  Service Meta Title in text format
+Meta description:  Service Meta Description in text format 
+Meta Keywords : Service Meta Keywords in text format 
 
-<div class="container my-5 bg-primary">
-    <div class="row position-relative">
 
-        <!-- ⭐ Owl Carousel -->
-        <div class="owl-carousel owl-theme joinvibes">
 
-            <div class="item">
-                <a href="assets/images/1.jpg">
-                    <img src="assets/images/1.jpg">
-                </a>
-                <h4 class="text-center mt-3">Smart Card Reader</h4>
-            </div>
 
-            <div class="item">
-                <a href="assets/images/1.jpg">
-                    <img src="assets/images/1.jpg">
-                </a>
-                <h4 class="text-center mt-3">Aadhaar Scanner</h4>
-            </div>
 
-            <div class="item">
-                <a href="assets/images/1.jpg">
-                    <img src="assets/images/1.jpg">
-                </a>
-                <h4 class="text-center mt-3">Attendance System</h4>
-            </div>
 
-            <div class="item">
-                <a href="assets/images/1.jpg">
-                    <img src="assets/images/1.jpg">
-                </a>
-                <h4 class="text-center mt-3">Access Control</h4>
-            </div>
+Update Service:
+ 
+In the Action column, there is an Edit button on the left, by clicking this button, you can update the Service details, including the Service title, Service image, Service banner, Service Logo, Service alias, Service description, Service status, meta title, meta keywords, and meta description.
 
-        </div>
 
-        <!-- ⭐ Center Arrows -->
-        <div class="custom-nav">
-            <button class="owl-prev">‹</button>
-            <button class="owl-next">›</button>
-        </div>
+Delete Service: 
 
-    </div>
-</div>
+In the Action column, there is also a Delete button on the right, by clicking this button, you can delete the Service.
 
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/lightgallery-all.min.js"></script>
+Testimonial Management:
+List Testimonial 
 
-<script>
-$(document).ready(function(){
+Add Testimonial:
+Testimonial Image: image (195px * 195px) (30kb)
+Testimonial  Title:  (Text ex. Remodelacion Cocinas Bogota)
+Testimonial alias:  text (with - and using small case ex.remodelacion-cocinas-bogota)
+Testimonial Description:
+Testimonial Status: Active/Deactive 
 
-    var owl = $(".joinvibes").owlCarousel({
-        loop: true,
-        margin: 20,
-        items: 3,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        nav: false,
-        dots: false,
-        responsive: {
-            0:{items:1},
-            570:{items:2},
-            1100:{items:2},
-            1200:{items:3}
-        }
-    });
+Update Testimonials:
+ 
+In the Action column, there is an Edit button on the left, by clicking this button, you can update the Testimonial details, including the Testimonial title, Testimonial image,Testimonial alias, Testimonial description, Testimonial status.
 
-    // ⭐ Custom Buttons
-    $('.owl-prev').click(function() {
-        owl.trigger('prev.owl.carousel');
-    });
+Delete Testimonials: 
+In the Action column, there is also a Delete button on the right, by clicking this button, you can delete the testimonial
 
-    $('.owl-next').click(function() {
-        owl.trigger('next.owl.carousel');
-    });
 
-    // ⭐ LightGallery
-    $('.joinvibes').lightGallery({
-        selector: '.item a'
-    });
-
-});
-</script>
-
-</body>
-</html>
